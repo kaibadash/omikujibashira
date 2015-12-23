@@ -2,6 +2,7 @@
 
 A Ruby gem for omikuji.
 This is a hyper simple gem for studying.
+Omikuji means randum pickup.
 
 ## Installation
 
