@@ -2,15 +2,21 @@ require 'spec_helper'
 
 describe Omikujibashira do
   describe ".omikuji" do
-    subject { Omikujibashira.omikuji(arr) }
+    subject { Omikujibashira.omikuji(*args) }
     context "with nil" do
-      let (:arr) { nil }
-      it { is_expected.to be_nil }
+      let (:args) { [nil] }
+      it { is_expected.to eq nil }
     end
 
-    context "with string array"
-      let (:arr) { ["kaiba", "taki", "yasai", "neco"] }
+    context "with string argsay" do
+      let (:args) { [["kaiba", "taki", "yasai", "neco"]] }
       it { is_expected.to be_kind_of(String) }
+    end
+
+    context "with some string values" do
+      let (:args) { ["kaiba", "taki", "yasai", "neco"] }
+      it { is_expected.to be_kind_of(String) }
+    end
   end
 
   describe ".omikuji_from_str" do
@@ -18,7 +24,7 @@ describe Omikujibashira do
     context "with nil" do
       let (:str) { nil }
       let (:splitter) { nil }
-      it { is_expected.to be_nil }
+      it { is_expected.to eq nil }
     end
 
     context "with CVS" do

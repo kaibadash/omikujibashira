@@ -1,8 +1,8 @@
 require "omikujibashira/version"
 
 module Omikujibashira
-  def self.omikuji(arr)
-    return if arr.nil?
+  def self.omikuji(*args)
+    arr = args.size == 1 ? Array(args.first) : args
     arr.sample
   end
 
