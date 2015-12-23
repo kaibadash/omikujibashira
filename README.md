@@ -7,8 +7,14 @@ This is a hyper simple gem for studying.
 ```ruby
 irb(main):001:0> require "omikujibashira"
 => true
+
+# string array
 irb(main):002:0> Omikujibashira.omikuji(["tomato","kaiba","dog"])
 => "kaiba"
+
+# string args
+irb(main):003:0> Omikujibashira.omikuji("gohan", "okonomiyaki", "beer")
+=> "okonomiyaki"
 ```
 
 ## Installation
