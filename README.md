@@ -3,6 +3,14 @@
 A Ruby gem for omikuji.
 This is a hyper simple gem for studying.
 
+## How to use
+```ruby
+irb(main):001:0> require "omikujibashira"
+=> true
+irb(main):002:0> Omikujibashira.omikuji(["tomato","kaiba","dog"])
+=> "kaiba"
+```
+
 ## Installation
 
 Add this line to your application's Gemfile:
